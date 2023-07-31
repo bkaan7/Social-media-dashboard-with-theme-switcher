@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Social Media Dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: hsl(103, 54%, 71%)
+      }
+      .attribution a {
+        color: hsl(103, 45%, 44%);
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background"></div>
+
+    <div class="container">
+      <div class="header">
+        <div class="left-box-header">
+          <span class="baslik"> Social Media Dashboard </span>
+          <span class="followers"> Total Followers: 23,004 </span>
+        </div>
+        <div class="right-box-header">
+          <!-- DARK MODE SWITCH START -->
+          <label class="switch">
+            <input type="checkbox" onclick="darkTheme()">
+            <span class="slider round"></span>
+          </label>
+          <!-- DARK MODE SWITCH END -->
+        </div>
+      </div>
+
+      <div class="seconder">
+        <div class="flex sec-box1">
+          <span class="sec-header">
+            <img src="../images/icon-facebook.svg" alt="" />
+            @nathanf
+          </span>
+          <span class="sec-number"> 1987 </span>
+          <span class="sec-followers"> Followers </span>
+
+          <span class="sec-day green">
+            <img src="../images/icon-up.svg" alt="" />12 Today
+          </span>
+        </div>
+
+        <div class="flex sec-box2">
+          <span class="sec-header">
+            <img src="../images/icon-twitter.svg" alt="" />
+            @nathanf
+          </span>
+          <span class="sec-number"> 1044 </span>
+
+          <span class="sec-followers"> Followers </span>
+          <span class="sec-day green">
+            <img src="../images/icon-up.svg" alt="" />99 Today
+          </span>
+        </div>
+
+        <div class="flex sec-box3">
+          <span class="sec-header">
+            <img src="../images/icon-instagram.svg" alt="" />
+            @realnathanf
+          </span>
+          <span class="sec-number"> 11k </span>
+          <span class="sec-followers"> Followers </span>
+          <span class="sec-day green">
+            <img src="../images/icon-up.svg" alt="" />1099 Today
+          </span>
+        </div>
+
+        <div class="flex sec-box4">
+          <span class="sec-header">
+            <img src="../images/icon-youtube.svg" alt="" />
+            Nathan F.
+          </span>
+          <span class="sec-number"> 8239 </span>
+
+          <span class="sec-followers"> Subscribers </span>
+
+          <span class="sec-day red">
+            <img src="../images/icon-down.svg" alt="" />144 Today
+          </span>
+        </div>
+      </div>
+
+      <div class="third">
+        <div class="th-header">Overview - Today</div>
+
+        <div class="th-container">
+          <div class="th-line1">
+            <div class="line1-1 th-box">
+              <div class="first">
+                <span class="context">Page Views</span>
+                <img src="../images/icon-facebook.svg" alt="">
+              </div>
+              <div class="sec">
+                <span class="number">87</span>
+                <span class="yuzde green">
+                  <img src="../images/icon-up.svg" alt="">
+                  3%
+                </span>
+              </div>
+            </div>
+            <div class="line1-2 th-box">
+              <div class="first">
+                <span class="context">Likes</span>
+                <img src="../images/icon-facebook.svg" alt="">
+              </div>
+              <div class="sec">
+                <span class="number">52</span>
+                <span class="yuzde red">
+                  <img src="../images/icon-down.svg" alt="">
+                  2%
+                </span>
+              </div>
+            </div>
+            <div class="line1-3 th-box">
+              <div class="first">
+                <span class="context">Likes</span>
+                <img src="../images/icon-instagram.svg" alt="">
+              </div>
+              <div class="sec">
+                <span class="number">5462</span>
+                <span class="yuzde green">
+                  <img src="../images/icon-up.svg" alt="">
+                  2257%
+                </span>
+              </div>
+            </div>
+            <div class="line1-4 th-box">
+              <div class="first">
+                <span class="context">Profile Views</span>
+                <img src="../images/icon-instagram.svg" alt="">
+              </div>
+              <div class="sec">
+                <span class="number">52k</span>
+                <span class="yuzde green">
+                  <img src="../images/icon-up.svg" alt="">
+                  1375%
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="th-line2">
+            <div class="line2-1 th-box">
+              <div class="first">
+                <span class="context">Retweets</span>
+                <img src="../images/icon-twitter.svg" alt="">
+              </div>
+              <div class="sec">
+                <span class="number">117</span>
+                <span class="yuzde green">
+                  <img src="../images/icon-up.svg" alt="">
+                  303%
+                </span>
+              </div>
+            </div>
+            <div class="line2-2 th-box">
+              <div class="first">
+                <span class="context">Likes</span>
+                <img src="../images/icon-twitter.svg" alt="">
+              </div>
+              <div class="sec">
+                <span class="number">507</span>
+                <span class="yuzde green">
+                  <img src="../images/icon-up.svg" alt="">
+                  553%
+                </span>
+              </div>
+            </div>
+            <div class="line2-3 th-box">
+              <div class="first">
+                <span class="context">Likes</span>
+                <img src="../images/icon-youtube.svg" alt="">
+              </div>
+              <div class="sec">
+                <span class="number">107</span>
+                <span class="yuzde red">
+                  <img src="../images/icon-down.svg" alt="">
+                  19%
+                </span>
+              </div>
+            </div>
+            <div class="line2-4 th-box">
+              <div class="first">
+                <span class="context">Total Views</span>
+                <img src="../images/icon-youtube.svg" alt="">
+              </div>
+              <div class="sec">
+                <span class="number">1407</span>
+                <span class="yuzde red">
+                  <img src="../images/icon-down.svg" alt="">
+                  12%
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/bkaan7/" target="_blank">Kaan Gedikli</a>.
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
